@@ -1,17 +1,17 @@
 # Python-Learning
-# ¹Ù·½ÍøÕ¾
+# å®˜æ–¹ç½‘ç«™
 https://www.python.org/
-# ¹Ù·½ÎÄµµ
+# å®˜æ–¹æ–‡æ¡£
 https://docs.python.org/3/
-# ½Ì³ÌÑ§Ï°
+# æ•™ç¨‹å­¦ä¹ 
 http://www.runoob.com/python3/python3-tutorial.html
 
 
 # xml
-## python¶ÔXMLµÄ½âÎö·½Ê½
+## pythonå¯¹XMLçš„è§£æžæ–¹å¼
 ### 1.SAX (simple API for XML )
-python ±ê×¼¿â°üº¬SAX½âÎöÆ÷£¬SAXÓÃÊÂ¼þÇý¶¯Ä£ÐÍ£¬Í¨¹ýÔÚ½âÎöXMLµÄ¹ý³ÌÖÐ´¥·¢Ò»¸ö¸öµÄÊÂ¼þ²¢µ÷ÓÃÓÃ»§¶¨ÒåµÄ»Øµ÷º¯ÊýÀ´´¦ÀíXMLÎÄ¼þ¡£
-[SAX·½Ê½¹Ù·½½âÎöÎÄµµ](https://docs.python.org/3/library/xml.sax.html)
+1. python æ ‡å‡†åº“åŒ…å«SAXè§£æžå™¨ï¼ŒSAXç”¨äº‹ä»¶é©±åŠ¨æ¨¡åž‹ï¼Œé€šè¿‡åœ¨è§£æžXMLçš„è¿‡ç¨‹ä¸­è§¦å‘ä¸€ä¸ªä¸ªçš„äº‹ä»¶å¹¶è°ƒç”¨ç”¨æˆ·å®šä¹‰çš„å›žè°ƒå‡½æ•°æ¥å¤„ç†XMLæ–‡ä»¶ã€‚
+2. [SAXæ–¹å¼å®˜æ–¹è§£æžæ–‡æ¡£](https://docs.python.org/3/library/xml.sax.html)
 ### 2.DOM(Document Object Model)
-½«XMLÊý¾ÝÔÚÄÚ´æÖÐ½âÎö³ÉÒ»¸öÊ÷£¬Í¨¹ý¶ÔÊ÷µÄ²Ù×÷À´²Ù×÷XML¡£
-[DOM·½Ê½¹Ù·½½âÎöÎÄµµ](https://docs.python.org/3/library/xml.dom.html)
+1. å°†XMLæ•°æ®åœ¨å†…å­˜ä¸­è§£æžæˆä¸€ä¸ªæ ‘ï¼Œé€šè¿‡å¯¹æ ‘çš„æ“ä½œæ¥æ“ä½œXMLã€‚
+2. [DOMæ–¹å¼å®˜æ–¹è§£æžæ–‡æ¡£](https://docs.python.org/3/library/xml.dom.html)
