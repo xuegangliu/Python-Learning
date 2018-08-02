@@ -1,5 +1,8 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*-
+#coding=utf-8
+#import json
+import jsonModul
+
 def functionHello(a):
   '''这里是Hello函数的doc'''
   print('----functionHello')
@@ -43,6 +46,7 @@ if __name__ == '__main__':
     print(functionHello.__doc__)
     #functionIf()
     functionType()
+    jsonModul.functionJson()
     print('-----------------------------------')
   except ValueError:
     print('this is Exception!!!')
