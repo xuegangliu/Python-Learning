@@ -1,6 +1,7 @@
 #!/usr/bin/python
 #coding=utf-8
 #import json
+import sys
 import jsonModul
 
 def functionHello(a):
@@ -47,6 +48,7 @@ if __name__ == '__main__':
     #functionIf()
     functionType()
     jsonModul.functionJson()
+    print(sys.argv)
     print('-----------------------------------')
   except ValueError:
     print('this is Exception!!!')
