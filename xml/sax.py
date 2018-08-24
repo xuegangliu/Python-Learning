@@ -1,13 +1,13 @@
 # coding=UTF-8
-# ½âÎöXMLÊµÀı
-# SAXÊÇÒ»ÖÖ»ùÓÚÊÂ¼şÇı¶¯µÄAPI¡£
-# ÀûÓÃSAX½âÎöXMLÎÄµµÇ£Éæµ½Á½¸ö²¿·Ö:1.½âÎöÆ÷  2.ÊÂ¼ş´¦ÀíÆ÷¡£
-# ½âÎöÆ÷¸ºÔğ¶ÁÈ¡XMLÎÄµµ,²¢ÏòÊÂ¼ş´¦ÀíÆ÷·¢ËÍÊÂ¼ş,ÈçÔªËØ¿ªÊ¼¸úÔªËØ½áÊøÊÂ¼ş;
-# ¶øÊÂ¼ş´¦ÀíÆ÷Ôò¸ºÔğ¶ÔÊÂ¼ş×÷³öÏàÓ¦,¶Ô´«µİµÄXMLÊı¾İ½øĞĞ´¦Àí¡£
+# è§£æXMLå®ä¾‹
+# SAXæ˜¯ä¸€ç§åŸºäºäº‹ä»¶é©±åŠ¨çš„APIã€‚
+# åˆ©ç”¨SAXè§£æXMLæ–‡æ¡£ç‰µæ¶‰åˆ°ä¸¤ä¸ªéƒ¨åˆ†:1.è§£æå™¨  2.äº‹ä»¶å¤„ç†å™¨ã€‚
+# è§£æå™¨è´Ÿè´£è¯»å–XMLæ–‡æ¡£,å¹¶å‘äº‹ä»¶å¤„ç†å™¨å‘é€äº‹ä»¶,å¦‚å…ƒç´ å¼€å§‹è·Ÿå…ƒç´ ç»“æŸäº‹ä»¶;
+# è€Œäº‹ä»¶å¤„ç†å™¨åˆ™è´Ÿè´£å¯¹äº‹ä»¶ä½œå‡ºç›¸åº”,å¯¹ä¼ é€’çš„XMLæ•°æ®è¿›è¡Œå¤„ç†ã€‚
 # --------------------------------------------------------
-# 1¡¢¶Ô´óĞÍÎÄ¼ş½øĞĞ´¦Àí£»
-# 2¡¢Ö»ĞèÒªÎÄ¼şµÄ²¿·ÖÄÚÈİ£¬»òÕßÖ»Ğè´ÓÎÄ¼şÖĞµÃµ½ÌØ¶¨ĞÅÏ¢¡£
-# 3¡¢Ïë½¨Á¢×Ô¼ºµÄ¶ÔÏóÄ£ĞÍµÄÊ±ºò¡£
+# 1ã€å¯¹å¤§å‹æ–‡ä»¶è¿›è¡Œå¤„ç†ï¼›
+# 2ã€åªéœ€è¦æ–‡ä»¶çš„éƒ¨åˆ†å†…å®¹ï¼Œæˆ–è€…åªéœ€ä»æ–‡ä»¶ä¸­å¾—åˆ°ç‰¹å®šä¿¡æ¯ã€‚
+# 3ã€æƒ³å»ºç«‹è‡ªå·±çš„å¯¹è±¡æ¨¡å‹çš„æ—¶å€™ã€‚
 
 import xml.sax
 
@@ -21,7 +21,7 @@ class MovieHandler( xml.sax.ContentHandler ):
       self.stars = ""
       self.description = ""
 
-   # ÔªËØ¿ªÊ¼µ÷ÓÃ
+   # å…ƒç´ å¼€å§‹è°ƒç”¨
    def startElement(self, tag, attributes):
       self.CurrentData = tag
       if tag == "movie":
@@ -29,7 +29,7 @@ class MovieHandler( xml.sax.ContentHandler ):
          title = attributes["title"]
          print ("Title:", title)
 
-   # ÔªËØ½áÊøµ÷ÓÃ
+   # å…ƒç´ ç»“æŸè°ƒç”¨
    def endElement(self, tag):
       if self.CurrentData == "type":
          print ("Type:", self.type)
@@ -45,7 +45,7 @@ class MovieHandler( xml.sax.ContentHandler ):
          print ("Description:", self.description)
       self.CurrentData = ""
 
-   # ¶ÁÈ¡×Ö·ûÊ±µ÷ÓÃ
+   # è¯»å–å­—ç¬¦æ—¶è°ƒç”¨
    def characters(self, content):
       if self.CurrentData == "type":
          self.type = content
@@ -59,16 +59,16 @@ class MovieHandler( xml.sax.ContentHandler ):
          self.stars = content
       elif self.CurrentData == "description":
          self.description = content
-  
+
 if ( __name__ == "__main__"):
-   
-   # ´´½¨Ò»¸ö XMLReader
+
+   # åˆ›å»ºä¸€ä¸ª XMLReader
    parser = xml.sax.make_parser()
    # turn off namepsaces
    parser.setFeature(xml.sax.handler.feature_namespaces, 0)
 
-   # ÖØĞ´ ContextHandler
+   # é‡å†™ ContextHandler
    Handler = MovieHandler()
    parser.setContentHandler( Handler )
-   
+
    parser.parse("movies.xml")
