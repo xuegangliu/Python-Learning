@@ -1,7 +1,10 @@
 #!/usr/bin/python
 #coding=utf-8
 #import json
+
 import sys
+sys.path.append(r'D:\WorkSpaces\Self\python\python3')
+
 import jsonModul
 
 def functionHello(a):
@@ -41,6 +44,7 @@ def functionType():
 
 # 这是入口
 if __name__ == '__main__':
+  print(sys.argv)
   try:
     print('-----------------------------------')
     functionHello('您好!')
