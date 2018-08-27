@@ -86,12 +86,45 @@ def json2data():
 	print ("data2['name']: ", data2['name'])
 	print ("data2['url']: ", data2['url'])
 
-if __name__ == '__main__':
-	hello()
-	aTest()
-	typeTest()
-	data2Json()
-	json2data()
-	inputFunction()
-	print('__main__')
+class ColorPrint:
+	"""
+    进行高亮输出运行信息
+    """
 
+	def __init__(self):
+		pass
+
+	OKBLUE = '\033[94m'
+	OKGREEN = '\033[92m'
+	WARING = '\033[95m'
+	FAIL = '\033[91m'
+	ENDC = '\033[0m'
+
+	@staticmethod
+	def log_normal(info):
+		print(ColorPrint.OKBLUE + info + ColorPrint.ENDC)
+
+	@staticmethod
+	def log_high(info):
+		print(ColorPrint.OKGREEN + info + ColorPrint.ENDC)
+
+	@staticmethod
+	def log_warn(info):
+		print(ColorPrint.WARING + info + ColorPrint.ENDC)
+
+	@staticmethod
+	def log_fail(info):
+		print(ColorPrint.FAIL + info + ColorPrint.ENDC)
+
+if __name__ == '__main__':
+	colorTest=ColorPrint(123456)
+	colorTest.log_normal(111111111111)
+	colorTest.log_warn(222222222222)
+	colorTest.log_fail(333333333333)
+	colorTest.log_high(44444444444)
+	# hello()
+	# aTest()
+	# typeTest()
+	# data2Json()
+	# json2data()
+	# inputFunction()
