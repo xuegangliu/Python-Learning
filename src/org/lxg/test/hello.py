@@ -7,20 +7,18 @@ import sys
 python import模块时， 是在sys.path里按顺序查找的。
 sys.path是一个列表，里面以字符串的形式存储了许多路径。
 '''
-sys.path.append(r'D:\WorkSpaces\Self\python\test\xmlModule')
-sys.path.append(r'D:\WorkSpaces\Self\python\test\baseModule')
-sys.path.append(r'D:\WorkSpaces\Self\python\test\threadModule')
+sys.path.append(r'D:\WorkSpaces\Self\python\src')
 
 import json
 import xml.dom.minidom
 import xml.sax
 import _thread
 
-import threadModule
-import threadingModule
-import baseModule
-import domModule
-import saxModule
+from org.lxg.test.threadModule import threadModule
+from org.lxg.test.threadModule import threadingModule
+from org.lxg.test.baseModule import baseModule
+from org.lxg.test.xmlModule import domModule
+from org.lxg.test.xmlModule import saxModule
 
 sumCount=1
 

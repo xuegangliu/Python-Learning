@@ -3,9 +3,9 @@
 #import json
 
 import sys
-sys.path.append(r'D:\WorkSpaces\Self\python\python3')
+sys.path.append(r'D:\WorkSpaces\Self\python\src')
 
-import jsonModul
+from org.lxg.python3 import jsonModul
 
 def functionHello(a):
   '''这里是Hello函数的doc'''
