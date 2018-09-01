@@ -21,6 +21,7 @@ python
     pip install beautifulsoup4
     pip install mysql-connector-python --allow-external mysql-connector-python
     pip install mysql-connector
+    pip install aiohttp
 ```
 
 ## python3链接
