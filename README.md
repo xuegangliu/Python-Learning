@@ -1,27 +1,28 @@
-# Python-Learning
+# python
 
-# 官方网站
+[![Build Status](https://travis-ci.org/xuegangliu/python.svg?branch=master)](https://travis-ci.org/xuegangliu/python)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/xuegangliu/python/pulls)
+[![GitHub stars](https://img.shields.io/github/stars/xuegangliu/python.svg?style=social&label=Stars)](https://github.com/xuegangliu/python)
+[![GitHub forks](https://img.shields.io/github/forks/xuegangliu/python.svg?style=social&label=Fork)](https://github.com/xuegangliu/python)
 
-https://www.python.org/
+## 组织结构
 
-# 官方文档
+``` lua
+python
+├── crawler - 爬虫
+├── db      - 数据库连接
+├── python3 - python3练习
+├── test    - 练习
+```
 
-https://docs.python.org/3/
+## python3链接
 
-# 教程学习
+- [官方网站](https://www.python.org/)
 
-http://www.runoob.com/python3/python3-tutorial.html
+- [官方文档](https://docs.python.org/3/)
 
-## python对XML的解析方式
+- [教程学习](http://www.runoob.com/python3/python3-tutorial.html)
 
-### 1.SAX (simple API for XML )
+- [DOM方式官方解析文档](https://docs.python.org/3/library/xml.dom.html)
 
-1. python 标准库包含SAX解析器，SAX用事件驱动模型，通过在解析XML的过程中触发一个个的事件并调用用户定义的回调函数来处理XML文件。
-
-2. [SAX方式官方解析文档](https://docs.python.org/3/library/xml.sax.html)
-
-### 2.DOM(Document Object Model)
-
-1. 将XML数据在内存中解析成一个树，通过对树的操作来操作XML。
-
-2. [DOM方式官方解析文档](https://docs.python.org/3/library/xml.dom.html)
+- [SAX方式官方解析文档](https://docs.python.org/3/library/xml.sax.html)
