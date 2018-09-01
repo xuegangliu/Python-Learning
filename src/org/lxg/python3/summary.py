@@ -2,8 +2,9 @@
 #coding=utf-8
 #import json
 
-import sys
-sys.path.append(r'D:\WorkSpaces\Self\python\src')
+import sys,os
+
+sys.path.append(os.path.abspath("./../../../"))
 
 from org.lxg.python3 import jsonModul
 

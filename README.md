@@ -15,6 +15,14 @@ python
 ├── test    - 练习
 ```
 
+## 需要安装的python 包模块
+
+```pip
+    pip install beautifulsoup4
+    pip install mysql-connector-python --allow-external mysql-connector-python
+    pip install mysql-connector
+```
+
 ## python3链接
 
 - [官方网站](https://www.python.org/)
