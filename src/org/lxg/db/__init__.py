@@ -9,13 +9,21 @@
 """
 
 import os
+import sys
 
 if __name__ == '__main__':
     db_file = os.path.join(os.path.dirname(__file__), 'test.db')
-    print('__file__:',__file__)
-    print('os.path:',os.path)
     print(os.path.dirname(__file__))
     print(db_file)
+
+    # 当前模块的文件名
+    print('当前模块的文件名:',__file__)
+    # 当前路径的绝对路径
+    print('当前路径的绝对路径:',os.path.abspath("."))
+    # 获取命令行参数
+    print('获取命令行参数:',sys.argv)
+    # 获取当前Python命令的可执行文件路径
+    print(sys.executable)
 
     # print("aa".join("xxx",'5'))
     # print(db_file)
