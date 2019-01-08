@@ -5,5 +5,4 @@ python:
 install:
   - pip install -r doc/lib.txt
 script:
-  - cd src\org\lxg\python3
-  - python summary.py
+  - python src\org\lxg\python3\summary.py
