@@ -6,4 +6,5 @@ install:
   - pip install -r doc/lib.txt
   - pip install .
 script:
-  - `cd src\org\lxg\python3` && `python summary.py`
+  - cd src\org\lxg\python3
+  - python summary.py
