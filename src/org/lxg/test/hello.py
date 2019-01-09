@@ -10,16 +10,7 @@ sys.path是一个列表，里面以字符串的形式存储了许多路径。
 '''
 sys.path.append(os.path.abspath("./../../../"))
 
-import json
-import xml.dom.minidom
-import xml.sax
-import _thread
-
-from org.lxg.test.threadModule import threadModule
 from org.lxg.test.threadModule import threadingModule
-from org.lxg.test.baseModule import baseModule
-from org.lxg.test.xmlModule import domModule
-from org.lxg.test.xmlModule import saxModule
 
 sumCount=1
 
@@ -45,26 +36,5 @@ if __name__ == '__main__':
 	while sumCount<3:
 		pass
 '''
-	# baseModule.hello()
-	# baseModule.aTest()
-	# baseModule.typeTest()
-	# baseModule.data2Json()
-	# baseModule.json2data()
-	# baseModule.inputFunction()
 
-	# domModule测试
-	# handler = domModule.MovieHandler('movies.xml')
-	# handler.parseXml()
-
-"""
-	# saxModule测试
-	# 创建一个 XMLReader
-	parser = xml.sax.make_parser()
-	# turn off namepsaces
-	parser.setFeature(xml.sax.handler.feature_namespaces, 0)
-	# 重写 ContextHandler
-	Handler = saxModule.MovieHandler()
-	parser.setContentHandler(Handler)
-	parser.parse("movies.xml")
-"""
 

@@ -6,4 +6,4 @@
 
 ## 导入依赖库
 
-`pip install -r requirements.txt`
+`pip install -r lib.txt`

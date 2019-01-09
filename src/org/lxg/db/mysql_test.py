@@ -33,6 +33,5 @@ if __name__ == '__main__':
     password=''
     database='test'
     id=[1]
-    # mysql_connect_init(host=host,user=user,password=password,database=database)
     list = mysql_connect_get(host=host,user=user,password=password,database=database,id=[1])
     print(list)
