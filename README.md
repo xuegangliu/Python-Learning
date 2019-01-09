@@ -1,9 +1,12 @@
 # python
 
-[![Build Status](https://travis-ci.org/xuegangliu/python.svg?branch=master)](https://travis-ci.org/xuegangliu/python)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/xuegangliu/python/pulls)
+[![Build Status](https://travis-ci.org/xuegangliu/python.svg?branch=master)](https://travis-ci.org/xuegangliu/python)
+[![issues](https://img.shields.io/github/issues/xuegangliu/python.svg)](https://github.com/xuegangliu/python/issues)
 [![GitHub stars](https://img.shields.io/github/stars/xuegangliu/python.svg?style=social&label=Stars)](https://github.com/xuegangliu/python)
 [![GitHub forks](https://img.shields.io/github/forks/xuegangliu/python.svg?style=social&label=Fork)](https://github.com/xuegangliu/python)
+[![RELEASE](https://img.shields.io/github/release/xuegangliu/python.svg)](https://github.com/xuegangliu/python/releases)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## 组织结构
 
