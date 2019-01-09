@@ -9,4 +9,4 @@ branches:
   only:
     - master
 script:
-  - test
+  - python test.py
