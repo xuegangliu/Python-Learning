@@ -28,6 +28,10 @@ python
     pip install aiohttp
 ```
 
+## 博客文档
+- [运行原理](https://www.cnblogs.com/restran/p/4903056.html)
+- [定时](https://www.jianshu.com/p/b77d934cc252)
+
 ## python3链接
 
 - [官方网站](https://www.python.org/)
