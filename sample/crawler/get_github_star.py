@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-__author__ = "MuT6 Sch01aR"
+__author__ = "Xuegang Liu"
 
 import requests
 from pyquery import PyQuery

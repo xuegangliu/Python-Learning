@@ -2,9 +2,9 @@
 # coding=utf-8
 # author: xuegangliu
 
-from org.lxg.test.baseModule import baseModule
-from org.lxg.test.xmlModule import domModule
-from org.lxg.test.xmlModule import saxModule
+from sample.baseModule import baseModule
+from sample.xmlModule import domModule
+from sample.xmlModule import saxModule
 
 import xml.sax
 

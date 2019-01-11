@@ -4,9 +4,7 @@
 
 import sys,os
 
-sys.path.append(os.path.abspath("./../../../"))
-
-from org.lxg.python3 import jsonModul
+from tests.python3 import jsonModul
 
 def functionHello(a):
   '''这里是Hello函数的doc'''

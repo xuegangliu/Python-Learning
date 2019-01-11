@@ -8,9 +8,9 @@ import sys,os
 python import模块时， 是在sys.path里按顺序查找的。
 sys.path是一个列表，里面以字符串的形式存储了许多路径。
 '''
-sys.path.append(os.path.abspath("./../../../"))
+# sys.path.append(os.path.abspath("./../../../"))
 
-from org.lxg.test.threadModule import threadingModule
+from sample.threadModule import threadingModule
 
 sumCount=1
 

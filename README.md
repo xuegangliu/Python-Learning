@@ -20,7 +20,7 @@ python
 
 ## 需要安装的python 包模块
 
-[依赖文档](/doc/install_lib.md)
+[依赖文档](/docs/install_lib.md)
 ```pip
     pip install beautifulsoup4
     pip install mysql-connector-python --allow-external mysql-connector-python

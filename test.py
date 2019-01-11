@@ -10,8 +10,8 @@ sys.path是一个列表，里面以字符串的形式存储了许多路径。
 '''
 sys.path.append(os.path.abspath('src'))
 
-import org.lxg.test.module_test
+import tests.module_test as module_test
 
 if __name__ == '__main__':
-    org.lxg.test.module_test.test_module()
+    module_test.test_module()
     print('bulid success!!')
