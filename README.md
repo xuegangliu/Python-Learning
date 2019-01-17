@@ -12,10 +12,17 @@
 
 ``` lua
 python
-├── crawler - 爬虫
-├── db      - 数据库连接
-├── python3 - python3练习
-├── test    - 练习
+├── config  - 配置文件
+├── sample  - 练习
+    ├── baseModule - 模块
+    ├── crawler - 爬虫
+    ├── db      - 数据库连接
+    ├── python3 - python3练习
+    ├── fileModule
+    ├── threadModule
+    ├── xmlModule
+├── tests    - 测试
+├── docs    - 文档
 ```
 
 ## 需要安装的python 包模块
